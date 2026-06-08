@@ -11,6 +11,16 @@ cette app le télécharge, le configure et le pilote à ta place.
 > payload automatiquement, et l'app expose le bouton **« Activer Samba »** (à relancer
 > après chaque redémarrage) + des outils firmware avancés (`flash`, avec garde-fous).
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="TimeCapsule SMB — étape Préparation" width="780">
+</p>
+
+## Téléchargement
+
+La dernière version (`.dmg`, Apple Silicon) est sur la page
+[**Releases**](https://github.com/Czaple-code/timecapsule-smb-app/releases/latest).
+Au premier lancement : **clic droit sur l'app → Ouvrir** (elle n'est pas signée Apple Developer).
+
 ## Ce que fait l'app
 
 Un assistant en 5 étapes :
