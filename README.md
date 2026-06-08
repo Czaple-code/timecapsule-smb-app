@@ -17,8 +17,9 @@ cette app le télécharge, le configure et le pilote à ta place.
 
 ## Téléchargement
 
-La dernière version (`.dmg`, Apple Silicon) est sur la page
-[**Releases**](https://github.com/Czaple-code/timecapsule-smb-app/releases/latest).
+La dernière version est sur la page
+[**Releases**](https://github.com/Czaple-code/timecapsule-smb-app/releases/latest) —
+un `.dmg` **universel** qui tourne nativement sur **Mac Intel et Apple Silicon**.
 Au premier lancement : **clic droit sur l'app → Ouvrir** (elle n'est pas signée Apple Developer).
 
 ## Ce que fait l'app
@@ -72,6 +73,10 @@ Internet et ne pas y rediriger de ports. L'app n'utilise jamais la commande `fla
 npm install
 npm run tauri dev      # fenêtre native
 npm run tauri build    # produit .app + .dmg dans src-tauri/target/release/bundle/
+
+# Build universel (Intel + Apple Silicon) :
+rustup target add x86_64-apple-darwin
+npm run tauri build -- --target universal-apple-darwin
 ```
 
 Le frontend tourne aussi seul dans un navigateur (`npm run dev`) en **mode démo** :
